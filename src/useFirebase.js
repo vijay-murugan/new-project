@@ -7,7 +7,7 @@ function useFirebase() {
     const auth = getAuth();
     const provider = new TwitterAuthProvider();
 
-    const handleSignIn = () => {
+    const handleSignInTwitter = () => {
         signInWithPopup(auth, provider)
         .then((result) => {
           // This gives you a the Twitter OAuth 1.0 Access Token and Secret.
@@ -32,7 +32,7 @@ function useFirebase() {
         });
     };
     return {
-        handleSignIn,
+        handleSignInTwitter,
 };
 }
 

@@ -7,7 +7,7 @@ function useFirebase() {
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
 
-    const handleSignIn = () => {
+    const handleSignInGoogle = () => {
         signInWithPopup(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
@@ -29,7 +29,7 @@ function useFirebase() {
   });
     };
     return {
-        handleSignIn,
+      handleSignInGoogle,
 };
 }
 

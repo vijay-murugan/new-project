@@ -7,7 +7,7 @@ function useFirebase() {
     const auth = getAuth();
     const provider = new FacebookAuthProvider();
 
-    const handleSignIn = () => {
+    const handleSignInFacebook = () => {
         signInWithPopup(auth, provider)
         .then((result) => {
           // The signed-in user info.
@@ -32,7 +32,7 @@ function useFirebase() {
         });
     };
     return {
-        handleSignIn,
+      handleSignInFacebook,
 };
 }
 
