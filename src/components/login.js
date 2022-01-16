@@ -4,7 +4,7 @@ import useFirebaseG from  './auths/useFBgoogle'
 import useFirebaseF from './auths/useFBfacebook'
 import './App.css';
 
-function App(){
+function Login(){
   const {handleSignInTwitter} = useFirebase();
   const {handleSignInGoogle} = useFirebaseG();
   const {handleSignInFacebook} = useFirebaseF();
@@ -19,4 +19,4 @@ function App(){
 
 
 
-export default App;
+export default Login;
